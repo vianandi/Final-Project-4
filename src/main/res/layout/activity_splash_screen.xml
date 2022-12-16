@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen"
+    android:background="@color/white">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="450dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/letsgo"
+        android:transitionName="logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/hallo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/big_shoulders_display_bold"
+        android:text="Hallo Travellers"
+        android:textAlignment="center"
+        android:textColor="@color/blue_cobalt"
+        android:textSize="60sp"
+        android:transitionName="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <TextView
+        android:id="@+id/pergiyuk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alata"
+        android:text="Let's Go"
+        android:textColor="@color/blue_raspberry"
+        android:textAlignment="center"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@id/hallo"/>
+
+    <TextView
+        android:id="@+id/slogan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alata"
+        android:text="We will serve you anywhere and anytime."
+        android:textColor="@color/blue_raspberry"
+        android:textAlignment="center"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@id/pergiyuk"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
